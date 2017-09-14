@@ -1,0 +1,68 @@
+<html>
+<head>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title> Registration page</title>
+<style>
+#new-div {
+background-color:white;
+border:6px solid black;
+width:400px;
+height:400px;
+margin-left:500px;
+padding:100px;
+}
+</style>
+<script>
+function fun() {
+var a=document.getElementById("uname").value;
+var b=document.getElementById("pass").value;
+if(a=="" || b="") {
+alert("please fill username and password");
+}
+if(a=="5" || b="5") {
+alert("it does not exsist 5 characters");
+}
+}
+</script>
+</head>
+<body>
+<form method="post" action="home.html">
+<center>
+<div id="new-div">
+<h1>Registration page</h1>
+<table>
+<tr>
+<td><label>username</label></td>
+<td><input type="text" id=uname></td>
+</tr>
+<tr>
+<td><label>email id</label></td>
+<td><input type="email id" id=pass></td>
+</tr>
+<tr>
+<td><label>Mobileno</label></td>
+<td><input type="phoneno" id=pass></td>
+</tr>
+<tr>
+<td><label>Date_of_birth</label></td>
+<td><input type="date" id=pass></td>
+</tr>
+<tr>
+<td><label>password</label></td>
+<td><input type="password" id=pass></td>
+</tr>
+<tr>
+<td><label>Re-enter password</label></td>
+<td><input type="password" id=pass></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td><br><button onclick="fun()">submit</button></td>
+<td><br><input type="reset" value="Reset"></td>
+</tr>
+</table>
+</center>
+</div>
+</body>
+</html>
